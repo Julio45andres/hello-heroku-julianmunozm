@@ -4,7 +4,7 @@
 </head>
 <body>
     <?php
-        echo '<p>Hola mundo ' .$_GET['name']'.<p/>'; 
+        echo '<p>Hola mundo '.htmlspecialchars($_GET['name']) . '.<p/>'; 
      ?>
 </body>
 </html>
